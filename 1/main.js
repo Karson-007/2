@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
     bgm2.volume = 0.8;
 
     img.src = img1;
+    var clickSound = new Audio('nope_4.mp3'); 
+    clickSound.volume = 0.5;
+    
 
     function moveButtonRandomly() {
         var windowWidth = window.innerWidth - button.offsetWidth;
@@ -31,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     button.addEventListener('click', function(){
+        clickSound.currentTime = 0; 
+        clickSound.play(); 
         moveButtonRandomly();
         clickCount++;
 
