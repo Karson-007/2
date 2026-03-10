@@ -23,7 +23,7 @@ body {
             background-repeat: repeat;
             background-attachment: fixed;
     
-    animation: bg-scroll 60s linear infinite;
+    animation: bg-scroll 8s linear infinite;
 }
 @keyframes bg-scroll {
   0% {
